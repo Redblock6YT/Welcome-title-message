@@ -1,6 +1,9 @@
 on first join:
     broadcast "&a&lNEW PLAYER! &fPlease welcome &a%player% &fto the server!"
-	send player title "&a&lWELCOME TO THE SERVER!" with subtitle "&f%player%" for 1 second
+    send player title "&a&lWELCOME TO THE SERVER!" with subtitle "&f%player%" for 1 second
+    play raw sound "random.levelup" at player with pitch 1 volume 100
 	
 on join:
-	send player title "&a&lWELCOME BACK!" with subtitle "&f%player%" for 1 second
+    send player title "&a&lWELCOME BACK!" with subtitle "&f%player%" for 1 second
+    play raw sound "note.pling" at player with pitch 1 volume 100
+    
